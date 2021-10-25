@@ -28,6 +28,7 @@ INSERT INTO albums(title, year_of_release) VALUES('Legend', 2018);
 INSERT INTO albums(title, year_of_release) VALUES('I Look To You', 2009);
 INSERT INTO albums(title, year_of_release) VALUES('Resist', 2019);
 INSERT INTO albums(title, year_of_release) VALUES('The Unforgiving', 2011);
+INSERT INTO albums(title, year_of_release) VALUES('Shed My Skin', 2020);
 
 INSERT INTO tracks(title, duration, single, album_id) VALUES('Faint', 164, false, 1);
 INSERT INTO tracks(title, duration, single, album_id) VALUES('In the End', 216, false, 2);
@@ -49,6 +50,9 @@ INSERT INTO tracks(title, duration, single, album_id) VALUES('Hit the Road Jack'
 INSERT INTO tracks(title, duration, single, album_id) VALUES('Unchain My Heart', 173, false, 9);
 INSERT INTO tracks(title, duration, single, album_id) VALUES('Call You Tonight', 248, false, 10);
 INSERT INTO tracks(title, duration, single, album_id) VALUES('Million Dollar Bill', 204, false, 10);
+INSERT INTO tracks(title, duration, single, album_id) VALUES('The Purge', 256, false, 13);
+INSERT INTO tracks(title, duration, single, album_id) VALUES('Entertain You', 211, false, 13);
+INSERT INTO tracks(title, duration, single, album_id) VALUES('Salvation', 118, false, 3);
 
 INSERT INTO collections(title, year_of_release) VALUES('From the Heart', 2021); 
 INSERT INTO collections(title, year_of_release) VALUES('The Good Comrade', 2021); 
@@ -92,6 +96,7 @@ INSERT INTO performersalbums(performer_id, album_id) VALUES(6, 7);
 INSERT INTO performersalbums(performer_id, album_id) VALUES(7, 8);
 INSERT INTO performersalbums(performer_id, album_id) VALUES(8, 9);
 INSERT INTO performersalbums(performer_id, album_id) VALUES(9, 10);
+INSERT INTO performersalbums(performer_id, album_id) VALUES(3, 13);
 
 INSERT INTO performersjenre(performer_id, jenre_id) VALUES(1, 2);
 INSERT INTO performersjenre(performer_id, jenre_id) VALUES(2, 2);
