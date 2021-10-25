@@ -47,3 +47,22 @@ HAVING COUNT(*) = (SELECT COUNT(*) FROM tracks
 GROUP by album_id 
 ORDER BY COUNT(*) 
 LIMIT 1);
+
+SELECT title FROM 
+(SELECT albums.title, COUNT(*) FROM albums 
+JOIN tracks ON albums.id = tracks.album_id 
+GROUP by albums.title 
+HAVING COUNT(*) = (SELECT COUNT(*) FROM tracks 
+GROUP by album_id 
+ORDER BY COUNT(*) 
+LIMIT 1)) as list;
+
+-- вариант без столбца COUNT
+SELECT title FROM 
+(SELECT albums.title, COUNT(*) FROM albums 
+JOIN tracks ON albums.id = tracks.album_id 
+GROUP by albums.title 
+HAVING COUNT(*) = (SELECT COUNT(*) FROM tracks 
+GROUP by album_id 
+ORDER BY COUNT(*) 
+LIMIT 1)) as list;
